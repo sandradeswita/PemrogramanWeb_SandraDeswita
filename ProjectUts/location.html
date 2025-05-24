@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lokasi - Harmoni One Hotel</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/leaflet/dist/leaflet.css" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #323232;
+      color: #f4e8c1;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2e343a;
+      padding: 15px 30px;
+      color: #f4e8c1;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+    }
+
+    .navbar ul li {
+      position: relative;
+      margin-left: 20px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #f4e8c1;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #333;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 180px;
+      top: 100%;
+      right: 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 6px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: #f4e8c1;
+      padding: 12px 18px;
+      text-decoration: none;
+      display: block;
+      font-weight: 500;
+      font-size: 15px;
+      transition: background-color 0.2s ease;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+      color: #000000;
+    }
+
+    /* Content */
+    .container {
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+
+    #map {
+      height: 400px;
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+    }
+
+    .address-box {
+      max-width: 600px;
+      background-color: #2e343a;
+      padding: 20px;
+      border-radius: 8px;
+      color: #f4e8c1;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Harmoni One</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#">About Us &#9662;</a>
+        <div class="dropdown-content">
+          <a href="profile.html">Profile</a>
+          <a href="restaurant.html">Restaurant</a>
+          <a href="facilities.html">Facilities</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#">Rooms &#9662;</a>
+        <div class="dropdown-content">
+          <a href="executive.html">Executive Room</a>
+          <a href="superior.html">Superior Room</a>
+          <a href="deluxe.html">Deluxe Room</a>
+          <a href="junior.html">Junior Suites</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#">Meeting/Event &#9662;</a>
+        <div class="dropdown-content">
+          <a href="meeting.html">Meeting Facilities</a>
+          <a href="ballroom.html">Ballroom</a>
+        </div>
+      </li>
+      <li><a href="location.html">Location</a></li>
+      <li><a href="programmer.html">Programmer Profile</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div id="map"></div>
+    <div class="address-box">
+      <h1>Harmoni One Hotel</h1>
+      <p><strong>Alamat:</strong> Jl. Engku Putri No.1, Batam Center, Kota Batam, Kepulauan Riau, Indonesia</p>
+      <p><strong>Deskripsi:</strong> Terletak strategis di pusat kota Batam, Harmoni One Hotel menawarkan akses mudah ke pusat pemerintahan, pusat perbelanjaan, dan tempat wisata. Hotel ini ideal untuk perjalanan bisnis maupun liburan keluarga.</p>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    var map = L.map('map').setView([1.045626, 104.030457], 15);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+    L.marker([1.045626, 104.030457]).addTo(map)
+      .bindPopup('Harmoni One Hotel<br>Jl. Engku Putri No.1, Batam Center')
+      .openPopup();
+  </script>
+
+</body>
+</html>

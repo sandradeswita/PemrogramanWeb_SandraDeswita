@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profile - Harmoni One</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #323232;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2e343a;
+      padding: 15px 30px;
+      color: #f4e8c1;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+    }
+
+    .navbar ul li {
+      position: relative;
+      margin-left: 20px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #f4e8c1;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #333;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 180px;
+      top: 100%;
+      right: 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 6px;
+      z-index: 1;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 12px 18px;
+      text-decoration: none;
+      display: block;
+      font-weight: 500;
+      font-size: 15px;
+      transition: background-color 0.2s ease;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+      color: #000000;
+    }
+
+    .header {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hotel.jpg') center/cover no-repeat;
+      color: #fff;
+      padding: 100px 20px 60px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+    }
+
+    .subtext {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #eee;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .profile-img {
+      width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .profile-text {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #f4e8c1;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      color: #f4e8c1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Harmoni One</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#">About Us &#9662;</a>
+        <div class="dropdown-content">
+          <a href="profile.html">Profile</a>
+          <a href="restaurant.html">Restaurant</a>
+          <a href="facilities.html">Facilities</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="header">
+    <h1 class="fw-bold">Profil Harmoni One</h1>
+    <div class="subtext mt-3">
+      Kenali lebih dekat hotel kami yang menyatukan kenyamanan, keindahan, dan pelayanan terbaik.
+    </div>
+  </header>
+
+  <!-- Profile Section -->
+  <section class="section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="hotel.jpg" alt="Hotel Harmoni One" class="profile-img" />
+        </div>
+        <div class="col-md-6">
+          <h2 class="mb-3">Tentang Harmoni One</h2>
+          <p class="profile-text">
+            Harmoni One adalah hotel bintang empat yang terletak di pusat kota, menawarkan perpaduan sempurna antara kenyamanan modern dan nuansa klasik. Dengan arsitektur elegan dan fasilitas lengkap, kami siap memberikan pengalaman menginap yang tak terlupakan.
+          </p>
+          <p class="profile-text">
+            Sejak berdiri, Harmoni One berkomitmen untuk menghadirkan pelayanan terbaik bagi para tamu, baik untuk keperluan bisnis maupun liburan. Kami menyediakan berbagai pilihan kamar, ruang pertemuan, spa, restoran, dan layanan lainnya untuk memenuhi segala kebutuhan Anda.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

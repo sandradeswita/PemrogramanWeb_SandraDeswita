@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant - Harmoni One</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #323232;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2e343a;
+      padding: 15px 30px;
+      color: #f4e8c1;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+    }
+
+    .navbar ul li {
+      position: relative;
+      margin-left: 20px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #f4e8c1;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #333;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 180px;
+      top: 100%;
+      right: 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 6px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: #f4e8c1;
+      padding: 12px 18px;
+      text-decoration: none;
+      display: block;
+      font-weight: 500;
+      font-size: 15px;
+      transition: background-color 0.2s ease;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+      color: #000000;
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('restaurant.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px 60px;
+    }
+
+    .header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .header p {
+      font-size: 20px;
+    }
+
+    /* Konten Restaurant */
+    .restaurant-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 60px 20px;
+      color: #fff;
+    }
+
+    .restaurant-img {
+      max-width: 500px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .restaurant-text {
+      max-width: 500px;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #ddd;
+    }
+
+    .restaurant-text h2 {
+      font-family: 'Playfair Display', serif;
+      color: #f4e8c1;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Harmoni One</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#">About Us &#9662;</a>
+        <div class="dropdown-content">
+          <a href="profile.html">Profile</a>
+          <a href="restaurant.html">Restaurant</a>
+          <a href="facilities.html">Facilities</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Restoran Harmoni One</h1>
+    <p>Menyajikan cita rasa terbaik dari berbagai penjuru dunia dalam suasana elegan dan nyaman.</p>
+  </div>
+
+  <!-- Isi Konten -->
+  <div class="restaurant-container">
+    <img src="restaurant.jpg" alt="Restoran Harmoni One" class="restaurant-img" />
+    <div class="restaurant-text">
+      <h2>Nikmati Hidangan Istimewa Kami</h2>
+      <p>
+        Restoran Harmoni One menawarkan pengalaman bersantap yang luar biasa dengan berbagai pilihan menu lokal dan internasional. Dengan suasana yang elegan, restoran kami cocok untuk makan malam romantis, jamuan bisnis, atau sekadar bersantai bersama keluarga.
+      </p>
+      <p>
+        Menu kami disusun oleh chef profesional yang mengutamakan bahan segar dan berkualitas tinggi. Restoran ini juga melayani sarapan prasmanan, makan siang à la carte, serta pilihan makanan ringan dan minuman sepanjang hari.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>

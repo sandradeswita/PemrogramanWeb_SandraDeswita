@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ballroom - Harmoni One</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #323232;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2e343a;
+      padding: 15px 30px;
+      color: #f4e8c1;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+    }
+
+    .navbar ul li {
+      position: relative;
+      margin-left: 20px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #f4e8c1;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #333;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 180px;
+      top: 100%;
+      right: 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 6px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: #f4e8c1;
+      padding: 12px 18px;
+      text-decoration: none;
+      display: block;
+      font-weight: 500;
+      font-size: 15px;
+      transition: background-color 0.2s ease;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+      color: #000000;
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('image/ballroom1.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px 60px;
+    }
+
+    .header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .header p {
+      font-size: 20px;
+    }
+
+    /* Konten Ballroom */
+    .ballroom-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 60px 20px;
+      color: #fff;
+    }
+
+    .ballroom-img {
+      max-width: 500px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .ballroom-text {
+      max-width: 500px;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #ddd;
+    }
+
+    .ballroom-text h2 {
+      font-family: 'Playfair Display', serif;
+      color: #f4e8c1;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Harmoni One</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Meeting/Event &#9662;</a>
+        <div class="dropdown-content">
+          <a href="meeting.html">Meeting Facilities</a>
+          <a href="ballroom.html">Ballroom</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Ballroom Harmoni One</h1>
+    <p>Tempat sempurna untuk momen istimewa dengan nuansa elegan, luas, dan eksklusif.</p>
+  </div>
+
+  <!-- Isi Konten -->
+  <div class="ballroom-container">
+    <img src="image/ballroom1.jpg" alt="Ballroom Utama" class="ballroom-img" />
+    <div class="ballroom-text">
+      <h2>Ballroom Utama</h2>
+      <p>
+        Ballroom utama kami menawarkan suasana megah dengan pencahayaan dramatis dan arsitektur modern. Cocok untuk acara besar seperti pernikahan, konferensi, hingga gala dinner. Dengan kapasitas hingga ratusan tamu, ruangan ini dilengkapi dengan sistem audio visual canggih untuk mendukung setiap detail acara Anda.
+      </p>
+    </div>
+  </div>
+
+  <div class="ballroom-container">
+    <img src="image/ballroom2.jpg" alt="Ballroom Serbaguna" class="ballroom-img" />
+    <div class="ballroom-text">
+      <h2>Ballroom Serbaguna</h2>
+      <p>
+        Ruang ballroom serbaguna ini dapat diatur sesuai kebutuhan Anda—mulai dari pameran, pelatihan, seminar, hingga acara komunitas. Dengan desain fleksibel dan suasana hangat, ruangan ini memberikan kenyamanan dan profesionalitas sekaligus dalam setiap kegiatan yang diselenggarakan.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harmoni One Convention Hotel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-custom px-4">
+    <div class="container-fluid">
+      <a class="navbar-brand playfair" href="#">Harmoni One</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About Us</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+              <li><a class="dropdown-item" href="restaurant.html">Restaurant</a></li>
+              <li><a class="dropdown-item" href="facilities.html">Facilities</a></li>
+              <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Rooms</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="executive.html">Executive Room</a></li>
+              <li><a class="dropdown-item" href="superior.html">Superior Room</a></li>
+              <li><a class="dropdown-item" href="deluxe.html">Deluxe Room</a></li>
+              <li><a class="dropdown-item" href="junior.html">Junior Suites</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Meeting/Event</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="meeting.html">Meeting Facilities</a></li>
+              <li><a class="dropdown-item" href="ballroom.html">Ballroom</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+          <li class="nav-item"><a class="nav-link" href="programmer.html">Programmer Profile</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center justify-content-center">
+    <div class="text-center text-white hero-overlay">
+      <h1 class="playfair">Welcome to Harmoni One</h1>
+      <p class="lead">A luxurious experience in the heart of Batam</p>
+      <a href="#contact" class="btn btn-outline-light mt-3 px-4 py-2">Book Now</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p><strong>Address:</strong> Jl. Engku Putri No.1, Batam Center</p>
+          <p><strong>Phone:</strong> (0778) 464 888</p>
+          <p><strong>Email:</strong> info@harmonione.com</p>
+        </div>
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Your Name" />
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your Email" />
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
